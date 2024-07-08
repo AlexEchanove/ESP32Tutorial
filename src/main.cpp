@@ -1,27 +1,11 @@
-#include <Arduino.h>
-
-#define PIN_LED 2
-byte ledPins[] = {15, 2, 0, 4, 5, 18, 19, 21, 22, 23};
-int ledCounts;
+#include <led_button.h>
 
 void setup() {
-  Serial.begin(115200);
-  ledCounts = sizeof(ledPins);
-  for (int i = 0; i < ledCounts; i++) {
-      pinMode(ledPins[i], OUTPUT);
-  }
+  led_button_setup();
 }
 
 void loop() {
-  // Serial.println("Hello World!");
-  for (int i = 0; i < ledCounts; i++) {
-    digitalWrite(ledPins[i], HIGH);
-    delay(100);
-    digitalWrite(ledPins[i], LOW);
-  }
-  for (int i = ledCounts - 1; i > -1; i--) {
-      digitalWrite(ledPins[i], HIGH);
-      delay(100);
-      digitalWrite(ledPins[i], LOW);
-  }
+  // Serial.begin(115200);
+  Serial.println("hello world");
+  led_button_loop();
 }
