@@ -1,11 +1,11 @@
-#include <led_flow.h>
+#include <led_rgb.h>
 
 void setup() {
-  led_flow_setup();
+  Serial.begin(115200);
+  led_rgb_setup();
 }
 
 void loop() {
-  Serial.begin(115200);
   Serial.println("hello world");
-  led_flow_loop();
+  led_rgb_loop();
 }
