@@ -11,9 +11,7 @@ void led_rgb_setup() {
 
 void led_rgb_loop() {
     Serial.begin(115200);
-    red   = random(0, 256);
-    green = random(0, 256);
-    blue  = random(0, 256);
+    red = random(0, 256), green = random(0, 256), blue  = random(0, 256);
     setColor(red, green, blue);
     delay(200);
 }
