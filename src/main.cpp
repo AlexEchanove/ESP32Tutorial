@@ -1,11 +1,13 @@
-#include <led_rgb.h>
+#include <led_rgb_wheel.h>
 
 void setup() {
   Serial.begin(115200);
-  led_rgb_setup();
+  RGB_LED_Wheel led;
+  led.led_rgb_setup();
 }
 
 void loop() {
   Serial.println("hello world");
-  led_rgb_loop();
+  RGB_LED_Wheel led;
+  led.led_rgb_loop();
 }
