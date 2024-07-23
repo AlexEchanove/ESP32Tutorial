@@ -12,7 +12,7 @@ const byte ledPins[] = {15, 2, 4};
 const byte chns[] = {0, 1, 2};
 
 class RGB_LED {
-    public:
+     public:
         void led_rgb_setup();
         virtual void led_rgb_loop();
         void setColor(byte r, byte g, byte b);
