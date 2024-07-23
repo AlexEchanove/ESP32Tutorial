@@ -1,23 +1,17 @@
-name: C/C++ CI
+name: Super-Linter
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: push
 
 jobs:
-  build:
-
+  super-lint:
+    name: Lint codebase
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Super-linter
+        uses: super-linter/super-linter@v6
+        env:
+          DEFAULT_BRANCH: main 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
