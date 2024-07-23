@@ -1,3 +1,5 @@
+// Copyright 2024 Alex
+
 #include <Arduino.h>
 
 #define RED_LED 15

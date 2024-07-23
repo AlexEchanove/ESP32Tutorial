@@ -1,3 +1,5 @@
+// Copyright 2024 Alex
+
 #include <Arduino.h>
 
 const byte ledPins[] = {15, 2, 0, 4, 5, 18, 19, 21, 22, 23}; 

@@ -18,4 +18,3 @@ jobs:
           IGNORE_GITIGNORED_FILES: true
           VALIDATE_CHECKOV: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-

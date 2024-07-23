@@ -1,3 +1,5 @@
+// Copyright 2024 Alex
+
 #include <led.h>
 
 void led_setup() {

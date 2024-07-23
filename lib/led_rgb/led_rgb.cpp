@@ -1,3 +1,5 @@
+// Copyright 2024 Alex
+
 #include "led_rgb.h"
 
 int red, green, blue;
@@ -25,5 +27,3 @@ void RGB_LED::setColor(byte r, byte g, byte b) {
     ledcWrite(chns[1], 255 - g);
     ledcWrite(chns[2], 255 - b);
 }
-
-

@@ -1,3 +1,5 @@
+// Copyright 2024 Alex
+
 #include "led_rgb_wheel.h"
 
 void RGB_LED_Wheel::setColor(long rgb) {
