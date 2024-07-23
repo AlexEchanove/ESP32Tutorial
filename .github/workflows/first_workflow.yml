@@ -14,4 +14,5 @@ jobs:
         uses: super-linter/super-linter@v6
         env:
           DEFAULT_BRANCH: main 
+          IGNORE_GITIGNORED_FILES: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
