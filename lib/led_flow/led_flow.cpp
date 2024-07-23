@@ -3,7 +3,7 @@
 int ledCounts;
 int delayTimes = 50;
 
-void led_flow_setup(){
+void led_flow_setup() {
     ledCounts = sizeof(ledPins);
     for (int i = 0; i < ledCounts; i++) {
         ledcSetup(chns[i], 1000, 10);
